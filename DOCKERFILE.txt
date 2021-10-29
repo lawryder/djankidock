@@ -1,0 +1,8 @@
+FROM ubuntu
+
+WORKDIR /
+
+COPY ./installscript.sh /installscript.sh
+RUN ./installscript.sh
+
+ENABLE 8001
